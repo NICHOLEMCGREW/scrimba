@@ -66,18 +66,48 @@ let lap3 = 36
 
 function sum() {
     let sum = lap1 + lap2 + lap3
-    console.log(sum)
+    // console.log(sum)
 }
 
 sum()
 
 
-// intialize the count as 0
+let lapsCompleted = 0
+
+// Create a function that increments the lapsCompleted variable with one
+// Run it three times
+
+function incrementLap() {
+   lapsCompleted = lapsCompleted + 1
+}
+
+incrementLap()
+incrementLap()
+incrementLap()
+
+
+// console.log(lapsCompleted)
+
+
+let countEl = document.getElementById('count-el')
 let count = 0
 
-// listen for clicks on the increment button
 function increment() {
-
+    count = count + 1
+    countEl.innerText = count
 }
-// increment the count variable when the button is clicked
-// change the count-el in the HTML
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+
+function save(){
+    // console.log(count)
+}
+save()
+
+
+// Create a variable, message, that stores the string: "You have tree new notifications"
+let username = "per"
+let message = "You have tree new notifications"
+
+console.log(message + username)
