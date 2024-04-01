@@ -41,9 +41,9 @@
 
 // countdown()
 
-// GO! 🏁
-// Players are running the race 🏎 💨
-// Race is finished! 🍾
+// GO! 
+// Players are running the race 🏎 
+// Race is finished! 
 
 // Get ready for a new race 🏎 🏎 🏎
 
@@ -140,7 +140,7 @@
 
 // welcomeEl.innerText = `${greeting} ${name}`
 
-// welcomeEl.innerText += ' 👋'
+// welcomeEl.innerText += 
 // 1. Grab the save-el paragrah and store it in a variable called saveEl
 // let saveEl = document.getElementById('save-el')
 // let countEl = document.getElementById("count-el")
@@ -162,22 +162,20 @@
 //     console.log(count)
 // }
 
-let saveEl = document.getElementById("save-el");
-let countEl = document.getElementById("count-el");
-let count = 0;
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+let count = 0
 
 function increment() {
-    count += 1;
-    countEl.textContent = count;
+    count += 1
+    countEl.textContent = count
 }
 
 function save() {
-    let countStr = count + " - ";
-    let span = document.createElement("span"); // Create a new <span> element
-    span.textContent = countStr; // Set the text content of the <span> element
-    saveEl.appendChild(span); // Append the <span> element to the save-el element
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
 }
 
 
-// Google:
-// innerText alternative mdn
